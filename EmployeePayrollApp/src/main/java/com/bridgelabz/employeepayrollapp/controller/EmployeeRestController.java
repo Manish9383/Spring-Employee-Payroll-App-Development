@@ -6,42 +6,46 @@ import com.bridgelabz.employeepayrollapp.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/employeepayrollservice")
 public class EmployeeRestController {
 
-    @Autowired  // UC4: Injecting EmployeeService
+    @Autowired
     private EmployeeService employeeService;
 
-    // UC2: Gett all employees
+    // Get all employees
     @GetMapping("/")
-    public String getAllEmployees() {
-        return "Getting all employees!";
+    public List<Employee> getAllEmployees() {
+        return employeeService.getAllEmployees();
     }
 
-    // UC2: Get employee by ID
+    // Get employee by ID
     @GetMapping("/get/{id}")
-    public String getEmployeeById(@PathVariable("id") Long id) {
-        return "Getting employee with ID: " + id;
+    public Optional<Employee> getEmployeeById(@PathVariable Long id) {
+        return employeeService.getEmployeeById(id);
     }
 
-    // UC4: Now using service layer to create employee
+    // Create Employee
     @PostMapping("/create")
-    public String createEmployee(@RequestBody EmployeeDTO employeeDTO) {
-        Employee employee = employeeService.createEmployee(employeeDTO);
-        return "Employee created: " + employee;
+    public Employee createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        Employee employee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
+        return employeeService.createEmployee(employee);
     }
 
-    // UC4: Now using service layer to update employee
-    @PutMapping("/update")
-    public String updateEmployee(@RequestBody EmployeeDTO employeeDTO) {
-        Employee employee = employeeService.updateEmployee(employeeDTO);
-        return "Employee updated with details: " + employee;
+    // Update Employee
+    @PutMapping("/update/{id}")
+    public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
+        Employee updatedEmployee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
+        return employeeService.updateEmployee(id, updatedEmployee);
     }
 
-    // UC2: Delete Employee by ID
+    // Delete Employee
     @DeleteMapping("/delete/{id}")
-    public String deleteEmployee(@PathVariable("id") Long id) {
-        return "Employee with ID " + id + " deleted.";
+    public String deleteEmployee(@PathVariable Long id) {
+        boolean isDeleted = employeeService.deleteEmployee(id);
+        return isDeleted ? "Employee deleted successfully!" : "Employee not found!";
     }
 }

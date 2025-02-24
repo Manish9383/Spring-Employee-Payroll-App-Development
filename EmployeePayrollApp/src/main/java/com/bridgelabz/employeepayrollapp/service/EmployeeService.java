@@ -1,20 +1,50 @@
 package com.bridgelabz.employeepayrollapp.service;
 
-
-import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
 import com.bridgelabz.employeepayrollapp.model.Employee;
 import org.springframework.stereotype.Service;
 
-@Service  // UC4: Service Layer
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+@Service
 public class EmployeeService {
 
-    // UC4: Creating Employee from DTO
-    public Employee createEmployee(EmployeeDTO employeeDTO) {
-        return new Employee(employeeDTO.getName(), employeeDTO.getSalary());
+    private final List<Employee> employeeList = new ArrayList<>();
+
+    // Get all employees
+    public List<Employee> getAllEmployees() {
+        return employeeList;
     }
 
-    // UC4: Updating Employee from DTO
-    public Employee updateEmployee(EmployeeDTO employeeDTO) {
-        return new Employee(employeeDTO.getName(), employeeDTO.getSalary());
+    // Get employee by ID
+    public Optional<Employee> getEmployeeById(Long id) {
+        return employeeList.stream()
+                .filter(emp -> emp.getId().equals(id))
+                .findFirst();
+    }
+
+    // Create Employee
+    public Employee createEmployee(Employee employee) {
+        employee.setId((long) (employeeList.size() + 1)); // Auto-increment ID
+        employeeList.add(employee);
+        return employee;
+    }
+
+    // Update Employee
+    public Employee updateEmployee(Long id, Employee updatedEmployee) {
+        for (Employee emp : employeeList) {
+            if (emp.getId().equals(id)) {
+                emp.setName(updatedEmployee.getName());
+                emp.setSalary(updatedEmployee.getSalary());
+                return emp;
+            }
+        }
+        return null;
+    }
+
+    // Delete Employee
+    public boolean deleteEmployee(Long id) {
+        return employeeList.removeIf(emp -> emp.getId().equals(id));
     }
 }
