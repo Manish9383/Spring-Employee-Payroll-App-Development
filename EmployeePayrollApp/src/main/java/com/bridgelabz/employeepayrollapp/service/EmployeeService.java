@@ -2,6 +2,8 @@ package com.bridgelabz.employeepayrollapp.service;
 
 import com.bridgelabz.employeepayrollapp.model.Employee;
 import org.springframework.stereotype.Service;
+import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +11,8 @@ import java.util.Optional;
 
 @Service
 public class EmployeeService {
-
     private final List<Employee> employeeList = new ArrayList<>();
+    private Long idCounter = 1L; // ID counter
 
     // Get all employees
     public List<Employee> getAllEmployees() {
@@ -26,7 +28,7 @@ public class EmployeeService {
 
     // Create Employee
     public Employee createEmployee(Employee employee) {
-        employee.setId((long) (employeeList.size() + 1)); // Auto-increment ID
+        employee.setId(idCounter++); // Auto-increment ID
         employeeList.add(employee);
         return employee;
     }

@@ -28,17 +28,17 @@ public class EmployeeRestController {
         return employeeService.getEmployeeById(id);
     }
 
-    // Create Employee
+    // Create Employee (No Validation)
     @PostMapping("/create")
     public Employee createEmployee(@RequestBody EmployeeDTO employeeDTO) {
-        Employee employee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
+        Employee employee = new Employee(null, employeeDTO.getName(), employeeDTO.getSalary());
         return employeeService.createEmployee(employee);
     }
 
     // Update Employee
     @PutMapping("/update/{id}")
     public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
-        Employee updatedEmployee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
+        Employee updatedEmployee = new Employee(null, employeeDTO.getName(), employeeDTO.getSalary());
         return employeeService.updateEmployee(id, updatedEmployee);
     }
 
