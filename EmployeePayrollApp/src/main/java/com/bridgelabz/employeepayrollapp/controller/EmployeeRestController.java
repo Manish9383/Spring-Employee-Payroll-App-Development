@@ -6,41 +6,32 @@ package com.bridgelabz.employeepayrollapp.controller;
 
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @RestController
 @RequestMapping("/employeepayrollservice")
 public class EmployeeRestController {
 
-    private final Map<Long, Map<String, Object>> employees = new HashMap<>();
-    private long idCounter = 1; // Auto-increment employee ID
-
     @GetMapping("/")
     public String getAllEmployees() {
-        return employees.isEmpty() ? "No employees found!" : "GET: All employees: " + employees;
+        return "Getting all employees!";
     }
 
     @GetMapping("/get/{id}")
-    public String getEmployee(@PathVariable long id) {
-        return employees.containsKey(id) ? "GET: " + employees.get(id) : "Employee not found!";
+    public String getEmployeeById(@PathVariable("id") Long id) {
+        return "Getting employee with ID: " + id;
     }
 
     @PostMapping("/create")
-    public String createEmployee(@RequestBody Map<String, Object> employee) {
-        employees.put(idCounter, employee);
-        return "POST: Created employee with ID " + idCounter++;
+    public String createEmployee(@RequestBody String employee) {
+        return "Employee created: " + employee;
     }
 
-    @PutMapping("/update/{id}")
-    public String updateEmployee(@PathVariable long id, @RequestBody Map<String, Object> employee) {
-        if (!employees.containsKey(id)) return "Employee not found!";
-        employees.put(id, employee);
-        return "PUT: Updated employee with ID " + id;
+    @PutMapping("/update")
+    public String updateEmployee(@RequestBody String employee) {
+        return "Employee updated with details: " + employee;
     }
 
     @DeleteMapping("/delete/{id}")
-    public String deleteEmployee(@PathVariable long id) {
-        return employees.remove(id) != null ? "DELETE: Employee deleted!" : "Employee not found!";
+    public String deleteEmployee(@PathVariable("id") Long id) {
+        return "Employee with ID " + id + " deleted.";
     }
 }
