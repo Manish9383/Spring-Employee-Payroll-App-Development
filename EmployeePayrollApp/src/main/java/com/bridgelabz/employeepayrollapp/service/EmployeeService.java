@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@Slf4j  // Lombok Logging
+@Slf4j  //UC7 Lombok Logging
 public class EmployeeService {
     private final List<Employee> employeeList = new ArrayList<>();
     private Long idCounter = 1L; // ID counter

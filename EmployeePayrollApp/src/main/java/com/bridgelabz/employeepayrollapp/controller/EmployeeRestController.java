@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/employeepayrollservice")
-@Slf4j  // Lombok Logging
+@Slf4j  //UC 7 Lombok Logging
 public class EmployeeRestController {
 
     @Autowired
