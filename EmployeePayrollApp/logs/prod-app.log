@@ -1,0 +1,379 @@
+2025-02-25T13:20:08.140+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 28404 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-25T13:20:08.142+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "prod"
+2025-02-25T13:20:09.513+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T13:20:09.514+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T13:20:09.562+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T13:20:09.707+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T13:20:09.774+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T13:20:09.821+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T13:20:10.156+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T13:20:10.712+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b46c53d
+2025-02-25T13:20:10.714+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T13:20:10.814+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T13:20:11.187+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T13:20:11.240+05:30  WARN 28404 --- [EmployeePayrollApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T13:20:11.474+05:30  WARN 28404 --- [EmployeePayrollApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-25T13:20:11.670+05:30  INFO 28404 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.902 seconds (process running for 4.58)
+2025-02-25T13:20:38.312+05:30  INFO 28404 --- [EmployeePayrollApp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25T13:20:49.797+05:30  INFO 28404 --- [EmployeePayrollApp] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T13:20:49.807+05:30  INFO 28404 --- [EmployeePayrollApp] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-25T13:21:34.769+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 12204 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-25T13:21:34.771+05:30 DEBUG 12204 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25T13:21:34.772+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "prod"
+2025-02-25T13:21:36.138+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T13:21:36.139+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T13:21:36.187+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T13:21:36.350+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T13:21:36.414+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T13:21:36.455+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T13:21:36.796+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T13:21:37.233+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d152795
+2025-02-25T13:21:37.236+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T13:21:37.318+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T13:21:37.628+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T13:21:37.682+05:30  WARN 12204 --- [EmployeePayrollApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T13:21:37.885+05:30  WARN 12204 --- [EmployeePayrollApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-25T13:21:38.057+05:30  INFO 12204 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.663 seconds (process running for 4.352)
+2025-02-25T13:21:45.705+05:30  INFO 12204 --- [EmployeePayrollApp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25T13:21:56.496+05:30  INFO 12204 --- [EmployeePayrollApp] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T13:21:56.504+05:30  INFO 12204 --- [EmployeePayrollApp] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-25T13:25:38.179+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18408 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-25T13:25:38.180+05:30 DEBUG 18408 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25T13:25:38.181+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "prod"
+2025-02-25T13:25:41.716+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T13:25:41.716+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T13:25:41.775+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T13:25:42.048+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T13:25:42.117+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T13:25:42.151+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T13:25:42.451+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T13:25:42.934+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7357a22c
+2025-02-25T13:25:42.937+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T13:25:43.011+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T13:25:43.300+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T13:25:43.357+05:30  WARN 18408 --- [EmployeePayrollApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T13:25:43.721+05:30  WARN 18408 --- [EmployeePayrollApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-25T13:25:44.031+05:30  INFO 18408 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 6.187 seconds (process running for 6.773)
+2025-02-25T13:26:24.807+05:30  INFO 18408 --- [EmployeePayrollApp] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25T13:26:46.836+05:30  INFO 18408 --- [EmployeePayrollApp] [http-nio-8080-exec-3] c.b.e.controller.EmployeeRestController  : Creating employee with Name: John Doe and Salary: 50000.0
+2025-02-25T13:26:46.837+05:30  INFO 18408 --- [EmployeePayrollApp] [http-nio-8080-exec-3] c.b.e.service.EmployeeService            : Employee Created: Employee(id=1, name=John Doe, salary=50000.0)
+2025-02-25T13:26:55.392+05:30  INFO 18408 --- [EmployeePayrollApp] [http-nio-8080-exec-4] c.b.e.controller.EmployeeRestController  : Updating employee ID: 1 with Name: John Doe Updated and Salary: 55000.0
+2025-02-25T13:26:55.393+05:30  INFO 18408 --- [EmployeePayrollApp] [http-nio-8080-exec-4] c.b.e.service.EmployeeService            : Employee Updated: Employee(id=1, name=John Doe Updated, salary=55000.0)
+2025-02-25T13:27:25.645+05:30  INFO 18408 --- [EmployeePayrollApp] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T13:27:25.672+05:30  INFO 18408 --- [EmployeePayrollApp] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-25T13:33:08.533+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 27212 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-25T13:33:08.535+05:30 DEBUG 27212 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25T13:33:08.536+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "prod"
+2025-02-25T13:33:09.962+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T13:33:09.962+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T13:33:10.010+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T13:33:10.147+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T13:33:10.204+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T13:33:10.240+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T13:33:10.532+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T13:33:11.031+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c303244
+2025-02-25T13:33:11.033+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T13:33:11.113+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T13:33:11.583+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T13:33:11.638+05:30  WARN 27212 --- [EmployeePayrollApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T13:33:11.836+05:30  WARN 27212 --- [EmployeePayrollApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-25T13:33:11.996+05:30  INFO 27212 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.877 seconds (process running for 4.567)
+2025-02-25T13:33:14.579+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25T13:33:14.714+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-2] c.b.e.controller.EmployeeRestController  : Creating employee with Name: John Doe and Salary: 50000.0
+2025-02-25T13:33:14.714+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-2] c.b.e.service.EmployeeService            : Employee Created: Employee(id=1, name=John Doe, salary=50000.0)
+2025-02-25T13:33:22.826+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-3] c.b.e.controller.EmployeeRestController  : Creating employee with Name: John trytDoe and Salary: 5.00656E7
+2025-02-25T13:33:22.826+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-3] c.b.e.service.EmployeeService            : Employee Created: Employee(id=2, name=John trytDoe, salary=5.00656E7)
+2025-02-25T13:33:55.734+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-4] c.b.e.controller.EmployeeRestController  : Creating employee with Name: Man Doe and Salary: 50000.0
+2025-02-25T13:33:55.734+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-4] c.b.e.service.EmployeeService            : Employee Created: Employee(id=3, name=Man Doe, salary=50000.0)
+2025-02-25T13:34:09.924+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-6] c.b.e.controller.EmployeeRestController  : Fetching employee with ID: 1
+2025-02-25T13:34:09.929+05:30 ERROR 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<Employee> to Optional<Employee>
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<Employee> to Optional<Employee>
+
+	at com.bridgelabz.employeepayrollapp.service.EmployeeService.getEmployeeById(EmployeeService.java:26) ~[classes/:na]
+	at com.bridgelabz.employeepayrollapp.controller.EmployeeRestController.getEmployeeById(EmployeeRestController.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-02-25T13:34:23.125+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-8] c.b.e.controller.EmployeeRestController  : Fetching all employees
+2025-02-25T13:34:23.126+05:30  INFO 27212 --- [EmployeePayrollApp] [http-nio-8080-exec-8] c.b.e.service.EmployeeService            : Fetching all employees from database
+2025-02-25T13:34:37.924+05:30  INFO 27212 --- [EmployeePayrollApp] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T13:34:37.932+05:30  INFO 27212 --- [EmployeePayrollApp] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-25T13:34:42.611+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 26536 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-25T13:34:42.612+05:30 DEBUG 26536 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25T13:34:42.614+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "prod"
+2025-02-25T13:34:43.822+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T13:34:43.823+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T13:34:43.862+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T13:34:43.999+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T13:34:44.049+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T13:34:44.080+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T13:34:44.412+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T13:34:44.874+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e7b24cd
+2025-02-25T13:34:44.876+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T13:34:44.959+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T13:34:45.215+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T13:34:45.236+05:30  WARN 26536 --- [EmployeePayrollApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeRestController': Unsatisfied dependency expressed through field 'employeeService': Error creating bean with name 'employeeService' defined in file [C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes\com\bridgelabz\employeepayrollapp\service\EmployeeService.class]: Failed to instantiate [com.bridgelabz.employeepayrollapp.service.EmployeeService]: Constructor threw exception
+2025-02-25T13:34:45.239+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T13:34:45.278+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-25T13:34:45.280+05:30  INFO 26536 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-25T13:34:45.312+05:30 ERROR 26536 --- [EmployeePayrollApp] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeRestController': Unsatisfied dependency expressed through field 'employeeService': Error creating bean with name 'employeeService' defined in file [C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes\com\bridgelabz\employeepayrollapp\service\EmployeeService.class]: Failed to instantiate [com.bridgelabz.employeepayrollapp.service.EmployeeService]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.bridgelabz.employeepayrollapp.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeService' defined in file [C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes\com\bridgelabz\employeepayrollapp\service\EmployeeService.class]: Failed to instantiate [com.bridgelabz.employeepayrollapp.service.EmployeeService]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.employeepayrollapp.service.EmployeeService]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 35 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.bridgelabz.employeepayrollapp.service.EmployeeService.<init>(EmployeeService.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 37 common frames omitted
+
+2025-02-25T13:35:01.417+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 15312 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-25T13:35:01.420+05:30 DEBUG 15312 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25T13:35:01.421+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "prod"
+2025-02-25T13:35:02.406+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T13:35:02.406+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T13:35:02.445+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T13:35:02.568+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T13:35:02.607+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T13:35:02.633+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T13:35:02.877+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T13:35:03.193+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b3d5543
+2025-02-25T13:35:03.195+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T13:35:03.259+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T13:35:03.509+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T13:35:03.529+05:30  WARN 15312 --- [EmployeePayrollApp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeRestController': Unsatisfied dependency expressed through field 'employeeService': Error creating bean with name 'employeeService' defined in file [C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes\com\bridgelabz\employeepayrollapp\service\EmployeeService.class]: Failed to instantiate [com.bridgelabz.employeepayrollapp.service.EmployeeService]: Constructor threw exception
+2025-02-25T13:35:03.535+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T13:35:03.577+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-25T13:35:03.579+05:30  INFO 15312 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-25T13:35:03.604+05:30 ERROR 15312 --- [EmployeePayrollApp] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeRestController': Unsatisfied dependency expressed through field 'employeeService': Error creating bean with name 'employeeService' defined in file [C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes\com\bridgelabz\employeepayrollapp\service\EmployeeService.class]: Failed to instantiate [com.bridgelabz.employeepayrollapp.service.EmployeeService]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.bridgelabz.employeepayrollapp.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeService' defined in file [C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes\com\bridgelabz\employeepayrollapp\service\EmployeeService.class]: Failed to instantiate [com.bridgelabz.employeepayrollapp.service.EmployeeService]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.employeepayrollapp.service.EmployeeService]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 35 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.bridgelabz.employeepayrollapp.service.EmployeeService.<init>(EmployeeService.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 37 common frames omitted
+
+2025-02-25T13:35:15.670+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 24908 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-25T13:35:15.671+05:30 DEBUG 24908 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25T13:35:15.672+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "prod"
+2025-02-25T13:35:16.745+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T13:35:16.746+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T13:35:16.811+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T13:35:16.979+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T13:35:17.037+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T13:35:17.072+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T13:35:17.412+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T13:35:17.800+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15be26da
+2025-02-25T13:35:17.802+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T13:35:17.870+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T13:35:18.138+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T13:35:18.193+05:30  WARN 24908 --- [EmployeePayrollApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T13:35:18.413+05:30  WARN 24908 --- [EmployeePayrollApp] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-25T13:35:18.573+05:30  INFO 24908 --- [EmployeePayrollApp] [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.246 seconds (process running for 4.046)
+2025-02-25T13:35:22.836+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25T13:35:22.983+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-2] c.b.e.controller.EmployeeRestController  : Creating employee with Name: John Doe and Salary: 50000.0
+2025-02-25T13:35:22.983+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-2] c.b.e.service.EmployeeService            : Employee Created: Employee(id=1, name=John Doe, salary=50000.0)
+2025-02-25T13:35:30.387+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-3] c.b.e.controller.EmployeeRestController  : Creating employee with Name: Joe Doe and Salary: 50000.0
+2025-02-25T13:35:30.388+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-3] c.b.e.service.EmployeeService            : Employee Created: Employee(id=2, name=Joe Doe, salary=50000.0)
+2025-02-25T13:35:38.873+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-4] c.b.e.controller.EmployeeRestController  : Fetching employee with ID: 1
+2025-02-25T13:35:38.873+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-4] c.b.e.service.EmployeeService            : Fetching employee with ID: 1
+2025-02-25T13:35:47.311+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-5] c.b.e.controller.EmployeeRestController  : Fetching all employees
+2025-02-25T13:35:47.311+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-5] c.b.e.service.EmployeeService            : Fetching all employees from database
+2025-02-25T13:38:10.659+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-9] c.b.e.controller.EmployeeRestController  : Fetching all employees
+2025-02-25T13:38:10.659+05:30  INFO 24908 --- [EmployeePayrollApp] [http-nio-8080-exec-9] c.b.e.service.EmployeeService            : Fetching all employees from database
+2025-02-25T13:39:18.811+05:30  INFO 24908 --- [EmployeePayrollApp] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-25T13:39:18.830+05:30  INFO 24908 --- [EmployeePayrollApp] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

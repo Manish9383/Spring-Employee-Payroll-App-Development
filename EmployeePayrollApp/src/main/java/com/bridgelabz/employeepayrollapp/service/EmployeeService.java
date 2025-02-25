@@ -23,9 +23,12 @@ public class EmployeeService {
     // Get employee by ID
     public Optional<Employee> getEmployeeById(Long id) {
         log.info("Fetching employee with ID: {}", id);
-		return employeeList;
-        
+        return employeeList.stream()
+                .filter(emp -> emp.getId().equals(id))
+                .findFirst();
     }
+        
+    
     // Get employee by Name
     public Optional<Employee> getEmployeeByName(String name) {
 
