@@ -20,13 +20,19 @@ public class EmployeeService {
         return employeeList;
     }
 
+<<<<<<< HEAD
     // Get employee by ID
     public Optional<Employee> getEmployeeById(Long id) {
         log.info("Fetching employee with ID: {}", id);
+=======
+    // Get employee by Name
+    public Optional<Employee> getEmployeeByName(String name) {
+>>>>>>> UC5_Memory_Storage_to_Services_Layer
         return employeeList.stream()
-                .filter(emp -> emp.getId().equals(id))
+                .filter(emp -> emp.getName().equalsIgnoreCase(name))
                 .findFirst();
     }
+
 
     // Create Employee
     public Employee createEmployee(Employee employee) {
