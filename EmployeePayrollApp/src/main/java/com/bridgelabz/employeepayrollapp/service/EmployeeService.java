@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@Slf4j  // Lombok Logging
+@Slf4j  //UC7 Lombok Logging
 public class EmployeeService {
     private final List<Employee> employeeList = new ArrayList<>();
     private Long idCounter = 1L; // ID counter
@@ -23,10 +23,17 @@ public class EmployeeService {
     // Get employee by ID
     public Optional<Employee> getEmployeeById(Long id) {
         log.info("Fetching employee with ID: {}", id);
+		return employeeList;
+        
+    }
+    // Get employee by Name
+    public Optional<Employee> getEmployeeByName(String name) {
+
         return employeeList.stream()
-                .filter(emp -> emp.getId().equals(id))
+                .filter(emp -> emp.getName().equalsIgnoreCase(name))
                 .findFirst();
     }
+
 
     // Create Employee
     public Employee createEmployee(Employee employee) {
