@@ -17,12 +17,13 @@ public class EmployeeService {
         return employeeList;
     }
 
-    // Get employee by Name
-    public Optional<Employee> getEmployeeByName(String name) {
+    // Get employee by ID
+    public Optional<Employee> getEmployeeById(Long id) {
         return employeeList.stream()
-                .filter(emp -> emp.getName().equalsIgnoreCase(name))
+                .filter(emp -> emp.getId().equals(id))
                 .findFirst();
     }
+
 
 
     // Create Employee
