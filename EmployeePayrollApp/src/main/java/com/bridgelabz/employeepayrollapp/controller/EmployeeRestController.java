@@ -36,10 +36,15 @@ public class EmployeeRestController {
     }
 
     // Update Employee
-    @PutMapping("/update/{id}")
-    public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
-        Employee updatedEmployee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
-        return employeeService.updateEmployee(id, updatedEmployee);
+    @PutMapping("/update")
+    public Employee updateEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        Optional<Employee> existingEmployee = employeeService.getEmployeeByName(employeeDTO.getName());
+        if (existingEmployee.isPresent()) {
+            Employee emp = existingEmployee.get();
+            emp.setSalary(employeeDTO.getSalary());
+            return emp;
+        }
+        return null; // Or throw an exception if the employee is not found
     }
 
     // Delete Employee
