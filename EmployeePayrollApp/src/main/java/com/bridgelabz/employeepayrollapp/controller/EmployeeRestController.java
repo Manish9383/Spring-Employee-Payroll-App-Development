@@ -42,6 +42,7 @@ public class EmployeeRestController {
 
     // Update Employee
 <<<<<<< HEAD
+<<<<<<< HEAD
     @PutMapping("/update/{id}")
     public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
         log.info("Updating employee ID: {} with Name: {} and Salary: {}", id, employeeDTO.getName(), employeeDTO.getSalary());
@@ -57,6 +58,12 @@ public class EmployeeRestController {
             return emp;
         }
         return null; // Or throw an exception if the employee is not found
+>>>>>>> UC5_Memory_Storage_to_Services_Layer
+=======
+    @PutMapping("/update/{id}")
+    public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
+        Employee updatedEmployee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
+        return employeeService.updateEmployee(id, updatedEmployee);
 >>>>>>> UC5_Memory_Storage_to_Services_Layer
     }
 
