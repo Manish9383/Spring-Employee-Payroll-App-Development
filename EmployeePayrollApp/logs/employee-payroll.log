@@ -1,0 +1,16 @@
+2025-02-27 23:30:30.083 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:53] Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 11508 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-27 23:30:30.084 [DEBUG] [restartedMain] [c.b.e.EmployeePayrollAppApplication:54] Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-27 23:30:30.085 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:658] The following 1 profile is active: "prod"
+2025-02-27 23:30:32.610 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:241] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 23:30:32.814 [WARN] [restartedMain] [o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:102] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-27 23:30:32.978 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:59] Started EmployeePayrollAppApplication in 3.225 seconds (process running for 3.822)
+2025-02-27 23:30:32.981 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:17] Payroll App Started in PROD Environment
+2025-02-27 23:30:32.982 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:21] Payroll DB User is payrolluser
+2025-02-27 23:30:45.640 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:53] Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 9740 (C:\Spring Employee Payroll App Development\EmployeePayrollApp\target\classes started by Asus in C:\Spring Employee Payroll App Development\EmployeePayrollApp)
+2025-02-27 23:30:45.642 [DEBUG] [restartedMain] [c.b.e.EmployeePayrollAppApplication:54] Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-27 23:30:45.642 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:658] The following 1 profile is active: "prod"
+2025-02-27 23:30:47.906 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:241] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-27 23:30:48.116 [WARN] [restartedMain] [o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:102] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-27 23:30:48.275 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:59] Started EmployeePayrollAppApplication in 2.959 seconds (process running for 3.519)
+2025-02-27 23:30:48.277 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:17] Payroll App Started in PROD Environment
+2025-02-27 23:30:48.279 [INFO] [restartedMain] [c.b.e.EmployeePayrollAppApplication:21] Payroll DB User is payrolluser

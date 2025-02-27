@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
-// UC6: Using Lombok
 
 @Data
 @NoArgsConstructor
