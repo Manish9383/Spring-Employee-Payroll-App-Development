@@ -1,5 +1,9 @@
 package com.bridgelabz.employeepayrollapp.controller;
-
+/*
+Use Case : 9
+Database setting as Environment Variable
+Open the MySQL Client and run the script to set up DB, User and Priviledges.
+*/
 import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
 import com.bridgelabz.employeepayrollapp.model.Employee;
 import com.bridgelabz.employeepayrollapp.service.EmployeeService;
@@ -12,7 +16,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/employeepayrollservice")
-@Slf4j  //UC 7 Lombok Logging
+@Slf4j  
 public class EmployeeRestController {
 
     @Autowired
@@ -40,7 +44,7 @@ public class EmployeeRestController {
         return employeeService.createEmployee(employee);
     }
 
-    // Update Employee
+//     Update Employee
 
     @PutMapping("/update/{id}")
     public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
@@ -58,12 +62,12 @@ public class EmployeeRestController {
         }
         return null; // Or throw an exception if the employee is not found
 }
-    @PutMapping("/update/{id}")
-    public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
-        Employee updatedEmployee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
-        return employeeService.updateEmployee(id, updatedEmployee);
-
-    }
+//    @PutMapping("/update/{id}")
+//    public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
+//        Employee updatedEmployee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
+//        return employeeService.updateEmployee(id, updatedEmployee);
+//
+//    }
 
     // Delete Employee
     @DeleteMapping("/delete/{id}")
