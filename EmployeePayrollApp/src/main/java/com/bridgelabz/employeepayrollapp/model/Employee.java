@@ -18,5 +18,5 @@ public class Employee {
     private LocalDate startDate;
     private String note;
     private String profilePic;
-    private List<String> department;
+    private List<String> departments;
 }
