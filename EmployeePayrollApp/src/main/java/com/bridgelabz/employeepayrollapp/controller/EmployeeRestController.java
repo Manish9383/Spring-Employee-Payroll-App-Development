@@ -1,11 +1,10 @@
 package com.bridgelabz.employeepayrollapp.controller;
 /*
-Use Case : 12
-Ability to throw User Friendly Errors in case Employee Id is not found in Employee Payroll App.
-- Define a Custom Exception for Employee Not Found and through when Employee Id is passed as parameter.
-- Handle such Exceptions in @ExceptionHandler method for EmployeeNotException class.
+Use Case : 13
+Add remaining properties to the Payroll DTO and Model Here we add gender, startDate, note, profilePic and department
 */
 import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
+
 import com.bridgelabz.employeepayrollapp.model.Employee;
 import com.bridgelabz.employeepayrollapp.service.EmployeeService;
 
@@ -39,20 +38,26 @@ public class EmployeeRestController {
         return employeeService.getEmployeeById(id);
     }
 
-    // Create Employee
+ // Create Employee
     @PostMapping("/create")
     public Employee createEmployee(@Valid @RequestBody EmployeeDTO employeeDTO) {
-        log.info("Creating employee with Name: {} and Salary: {}", employeeDTO.getName(), employeeDTO.getSalary());
-        Employee employee = new Employee(null, employeeDTO.getName(), employeeDTO.getSalary());
+        log.info("Creating employee with Name: {}", employeeDTO.getName());
+        Employee employee = new Employee(null, employeeDTO.getName(), employeeDTO.getSalary(), 
+                                         employeeDTO.getGender(), employeeDTO.getStartDate(),
+                                         employeeDTO.getNote(), employeeDTO.getProfilePic(),
+                                         employeeDTO.getDepartment());
         return employeeService.createEmployee(employee);
     }
 
-//     Update Employee
 
+    // Update Employee
     @PutMapping("/update/{id}")
     public Employee updateEmployee(@PathVariable Long id, @Valid @RequestBody EmployeeDTO employeeDTO) {
-        log.info("Updating employee ID: {} with Name: {} and Salary: {}", id, employeeDTO.getName(), employeeDTO.getSalary());
-        Employee updatedEmployee = new Employee(null, employeeDTO.getName(), employeeDTO.getSalary());
+        log.info("Updating employee ID: {}", id);
+        Employee updatedEmployee = new Employee(null, employeeDTO.getName(), employeeDTO.getSalary(),
+                                                employeeDTO.getGender(), employeeDTO.getStartDate(),
+                                                employeeDTO.getNote(), employeeDTO.getProfilePic(),
+                                                employeeDTO.getDepartment());
         return employeeService.updateEmployee(id, updatedEmployee);
     }
 

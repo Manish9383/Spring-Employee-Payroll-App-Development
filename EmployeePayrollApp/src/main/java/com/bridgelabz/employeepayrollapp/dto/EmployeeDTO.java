@@ -7,6 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,4 +21,15 @@ public class EmployeeDTO {
 
     @Min(value = 500, message = "Min wage should be more than 500")
     private double salary;
+
+    @NotBlank(message = "Gender is required")
+    private String gender;
+
+    private LocalDate startDate;
+
+    private String note;
+
+    private String profilePic;
+
+    private List<String> department; // List of department names
 }

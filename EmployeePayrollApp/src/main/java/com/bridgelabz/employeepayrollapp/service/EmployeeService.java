@@ -12,7 +12,7 @@ import java.util.Optional;
 @Slf4j  
 public class EmployeeService {
     private final List<Employee> employeeList = new ArrayList<>();
-    private Long idCounter = 1L; // ID counter
+    private Long idCounter = 1L; 
 
     // Get all employees
     public List<Employee> getAllEmployees() {
@@ -53,6 +53,11 @@ public class EmployeeService {
             if (emp.getId().equals(id)) {
                 emp.setName(updatedEmployee.getName());
                 emp.setSalary(updatedEmployee.getSalary());
+                emp.setGender(updatedEmployee.getGender());
+                emp.setStartDate(updatedEmployee.getStartDate());
+                emp.setNote(updatedEmployee.getNote());
+                emp.setProfilePic(updatedEmployee.getProfilePic());
+                emp.setDepartment(updatedEmployee.getDepartment());
                 log.info("Employee Updated: {}", emp);
                 return emp;
             }
@@ -60,6 +65,7 @@ public class EmployeeService {
         log.warn("Employee with ID {} not found for update", id);
         return null;
     }
+
 
     // Delete Employee
     public boolean deleteEmployee(Long id) {
