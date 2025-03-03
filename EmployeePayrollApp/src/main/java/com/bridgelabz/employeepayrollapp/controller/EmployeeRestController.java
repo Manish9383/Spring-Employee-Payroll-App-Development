@@ -8,7 +8,13 @@ import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+/*
+Use Case : 14
+Ability to save Employee Payroll Data to MySQL DB
+-@Entity Annotation tells Hibernate to create a table out of the Employee Payroll Class
+- Create a Repository Interface to hold Employee Payroll Records. Spring automatically implements
+  this repository interface
+*/
 import java.util.List;
 import java.util.Optional;
 

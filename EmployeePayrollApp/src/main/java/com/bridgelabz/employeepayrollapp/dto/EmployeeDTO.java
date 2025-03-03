@@ -21,8 +21,7 @@ public class EmployeeDTO {
     @Min(value = 500, message = "Min wage should be more than 500")
     private double salary;
 
-    @Pattern(regexp = "^(male|female|other)$", message = "Gender must be male, female, or other.")
-    private String gender;
+    @Pattern(regexp = "Male|Female|Other", message = "Gender must be male, female, or other.")    private String gender;
 
     @JsonFormat(pattern = "dd-MM-yyyy")
     @PastOrPresent(message = "Start date should be a past or present date.")
