@@ -1,9 +1,7 @@
 package com.bridgelabz.employeepayrollapp.exception;
 
-
-public class EmployeeNotFoundException extends RuntimeException{
-
-    public EmployeeNotFoundException(long id){
-        super("Employee with ID " + id + " not found.");
+public class EmployeeNotFoundException extends RuntimeException {
+    public EmployeeNotFoundException(Long id) {
+        super("Employee not found with ID: " + id);
     }
 }

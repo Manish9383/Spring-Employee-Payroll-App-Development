@@ -1,22 +1,13 @@
 package com.bridgelabz.employeepayrollapp.controller;
 
+import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
 import com.bridgelabz.employeepayrollapp.model.Employee;
 import com.bridgelabz.employeepayrollapp.service.EmployeeService;
-import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import com.bridgelabz.employeepayrollapp.dto.EmployeeDTO;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-/*
-Use Case : 14
-Ability to save Employee Payroll Data to MySQL DB
--@Entity Annotation tells Hibernate to create a table out of the Employee Payroll Class
-- Create a Repository Interface to hold Employee Payroll Records. Spring automatically implements
-  this repository interface
-*/
+
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/employeepayrollservice")
@@ -33,19 +24,19 @@ public class EmployeeRestController {
     }
 
     @GetMapping("/get/{id}")
-    public Optional<Employee> getEmployeeById(@PathVariable Long id) {
+    public Employee getEmployeeById(@PathVariable Long id) {
         log.info("Fetching employee with ID: {}", id);
         return employeeService.getEmployeeById(id);
     }
 
     @PostMapping("/create")
-    public Employee createEmployee(@Valid @RequestBody EmployeeDTO employeeDTO) {
+    public Employee createEmployee(@RequestBody EmployeeDTO employeeDTO) {
         log.info("Creating employee: {}", employeeDTO);
         return employeeService.createEmployee(employeeDTO);
     }
 
     @PutMapping("/update/{id}")
-    public Employee updateEmployee(@PathVariable Long id, @Valid @RequestBody EmployeeDTO employeeDTO) {
+    public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
         log.info("Updating employee ID {} with data: {}", id, employeeDTO);
         return employeeService.updateEmployee(id, employeeDTO);
     }
@@ -53,6 +44,7 @@ public class EmployeeRestController {
     @DeleteMapping("/delete/{id}")
     public String deleteEmployee(@PathVariable Long id) {
         log.info("Deleting employee with ID: {}", id);
-        return employeeService.deleteEmployee(id) ? "Employee deleted successfully!" : "Employee not found!";
+        employeeService.deleteEmployee(id);
+        return "Employee deleted successfully!";
     }
 }
